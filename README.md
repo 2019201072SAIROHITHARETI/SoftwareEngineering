@@ -1,6 +1,8 @@
 # SoftwareEngineering
 major project as part of software engineering course
 
+DOC LINK:https://docs.google.com/document/d/1sMVWcJEF0UeHqds890efGLplTVperFOkVTOjcrh5yK4/edit#
+
 Group Members:
 SAI ROHITH ARETI(2019201072)
 YALLAMANDA RAO MUNDRU(2019201029)
