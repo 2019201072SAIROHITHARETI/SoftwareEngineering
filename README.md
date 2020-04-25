@@ -28,6 +28,12 @@ The client side on running produces a starting window which gives 2 options :
 1)To register in case you are not a part of the chat application
 2)To login in case you are.
 
+## Registration :
+On clicking the register button, a new screen is displayed which takes in Server IP, Server port,
+Username and password to be used for login. After clicking “Register” , if successful, one is
+redirected to the Login page.
+
+
 
 
 Group Members:
