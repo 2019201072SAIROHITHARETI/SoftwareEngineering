@@ -33,6 +33,12 @@ On clicking the register button, a new screen is displayed which takes in Server
 Username and password to be used for login. After clicking “Register” , if successful, one is
 redirected to the Login page.
 
+## Chatting :
+The list of all online users are displayed on the left side . To send a message to one or more of
+them, just select your intended recipients and type in the message. Then press enter key or send
+button and the message is sent! The sent and incoming messages are all shown on the chat screen.
+To broadcast a message, just don’t select any users and type in your message !
+
 
 
 
