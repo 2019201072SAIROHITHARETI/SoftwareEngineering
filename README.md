@@ -33,6 +33,11 @@ On clicking the register button, a new screen is displayed which takes in Server
 Username and password to be used for login. After clicking “Register” , if successful, one is
 redirected to the Login page.
 
+## Login :
+Here, one just needs to enter the Server IP, Server port, Username and password to be used for
+login. After clicking Login, if authenticated,(credentials are correct), then you are redirected to the
+chat page.
+
 ## Chatting :
 The list of all online users are displayed on the left side . To send a message to one or more of
 them, just select your intended recipients and type in the message. Then press enter key or send
@@ -43,6 +48,12 @@ To broadcast a message, just don’t select any users and type in your message !
 First select the intended recipients as usual. Enter the absolute file path,(or if in the same directory,
 enter the file name), and then press the ‘Send Multimedia’ button. Please note that max file size for
 sharing is 100KB .
+
+## Quitting:
+Just click the cross (‘X’) button on the title bar.
+
+## Broadcasting the image:
+To send the image or chat to multiple clients we can select the intended recipients and type the text message or mutimedia file by clicking 'Send multimedia'
 
 
 
