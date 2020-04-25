@@ -3,6 +3,33 @@ major project as part of software engineering course
 
 DOC LINK:https://docs.google.com/document/d/1sMVWcJEF0UeHqds890efGLplTVperFOkVTOjcrh5yK4/edit#
 
+## Packages required on system:
+1. Python 2.7 or above
+2. Python 3 (Note: Both 2 and 3 are necessary)
+3. Tkinter GUI library for Python 2.7
+4. Netifaces library
+
+For Netifaces : sudo pip3 install netifaces
+
+For Tkinter GUI library: sudo apt-get install python-tk
+
+## How to use :
+1. To start the server, run the command :
+python3 server.py <port no>
+  use port number above 1024
+2. To start the client, run the command :
+python client.py
+
+The server side runs automatically and selectively keeps showing notifications as the application
+goes through various stages. There is nothing to be controlled in the server side once it has started
+running.
+
+The client side on running produces a starting window which gives 2 options : 
+1)To register in case you are not a part of the chat application
+2)To login in case you are.
+
+
+
 Group Members:
 SAI ROHITH ARETI(2019201072)
 YALLAMANDA RAO MUNDRU(2019201029)
