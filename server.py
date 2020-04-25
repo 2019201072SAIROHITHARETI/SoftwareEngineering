@@ -4,6 +4,7 @@ from socket import *
 from _thread import *
 import netifaces as ni
 import sys
+import os
 
 #For python3, decode is required after receiving messages and encode before sending messages (part of string library)
 #for every action , we have used try and except for error catching
@@ -211,9 +212,14 @@ if __name__ == "__main__":
 
 	#Creating socket object
 	sock = socket()
+
+	#get wireless interface name
+	wInterfaceName = os.popen('ifconfig | grep wlp').read()
+	interface = wInterfaceName[0:6]
+
 	# Defining server address and port
-	ni.ifaddresses('wlp2s0')
-	host = ni.ifaddresses('wlp2s0')[2][0]['addr']	
+	ni.ifaddresses(interface)
+	host = ni.ifaddresses(interface)[2][0]['addr']	
 	port = int(sys.argv[1]) #Use port > 1024, below it all are reserved
 	#Binding socket to a address. bind() takes tuple of host and port.
 	sock.bind((host, port))
