@@ -39,10 +39,16 @@ them, just select your intended recipients and type in the message. Then press e
 button and the message is sent! The sent and incoming messages are all shown on the chat screen.
 To broadcast a message, just don’t select any users and type in your message !
 
+## Multimedia sharing:
+First select the intended recipients as usual. Enter the absolute file path,(or if in the same directory,
+enter the file name), and then press the ‘Send Multimedia’ button. Please note that max file size for
+sharing is 100KB .
 
 
 
-Group Members:
+
+
+### Group Members:
 SAI ROHITH ARETI(2019201072)
 YALLAMANDA RAO MUNDRU(2019201029)
 JAYA KRISHNA KURAVA(2019201076)
