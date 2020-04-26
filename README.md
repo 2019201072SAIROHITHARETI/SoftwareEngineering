@@ -55,6 +55,18 @@ Just click the cross (‘X’) button on the title bar.
 ## Broadcasting the image:
 To send the image or chat to multiple clients we can select the intended recipients and type the text message or mutimedia file by clicking 'Send multimedia'
 
+# Additional Features Added 
+Now through chat we could get image to our pc now if we need to transfer our files from our pc to any device(ie mobiles,tabs,..).
+
+# qr-filetransfer-universal
+📁 Send files from your Computer to your Phone through WiFi with a QR code
+
+## About
+This is a handy little python 3 program that allows you to send files or folders through your Local Area Network (inside your WiFi) by simply scanning a QR Code through your phone! The code is based off sdushantha's amazing work with some added stuff that I found useful plus compatibility with Windows aside from macOS and Linux.
+
+*Note that on Windows, the QR Code won't appear inside the powershell/cmd window but instead through an image viewer.*
+
+
 
 
 
