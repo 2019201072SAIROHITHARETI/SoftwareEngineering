@@ -1,6 +1,14 @@
 # SoftwareEngineering
 major project as part of software engineering course
 
+### Group Members:
+1. SAI ROHITH ARETI(2019201072)
+2. YALLAMANDA RAO MUNDRU(2019201029)
+3. JAYA KRISHNA KURAVA(2019201076)
+4. SHOVAN SWAIN (20161127)
+5. ARUN G (201564134)
+6. AASHISH SHRIVATSAVA (20161111)
+
 DOC LINK:https://docs.google.com/document/d/1sMVWcJEF0UeHqds890efGLplTVperFOkVTOjcrh5yK4/edit#
 
 ## Packages required on system:
@@ -113,18 +121,3 @@ Transfer a full directory. **Note:** the directory gets zipped before being tran
 ```bash
 python3 qr-filetransfer-universal.py -f /path/to/directory/
 ```
-
-
-
-
-
-
-
-
-### Group Members:
-SAI ROHITH ARETI(2019201072)
-YALLAMANDA RAO MUNDRU(2019201029)
-JAYA KRISHNA KURAVA(2019201076)
-SHOVAN SWAIN (20161127)
-ARUN G (201564134)
-AASHISH SHRIVATSAVA (20161111)
