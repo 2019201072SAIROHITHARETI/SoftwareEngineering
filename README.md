@@ -1,6 +1,14 @@
 # SoftwareEngineering
 major project as part of software engineering course
 
+### Group Members:
+1. SAI ROHITH ARETI(2019201072)
+2. YALLAMANDA RAO MUNDRU(2019201029)
+3. JAYA KRISHNA KURAVA(2019201076)
+4. SHOVAN SWAIN (20161127)
+5. ARUN G (201564134)
+6. AASHISH SHRIVATSAVA (20161111)
+
 DOC LINK:https://docs.google.com/document/d/1sMVWcJEF0UeHqds890efGLplTVperFOkVTOjcrh5yK4/edit#
 
 ## Packages required on system:
@@ -55,14 +63,61 @@ Just click the cross (‘X’) button on the title bar.
 ## Broadcasting the image:
 To send the image or chat to multiple clients we can select the intended recipients and type the text message or mutimedia file by clicking 'Send multimedia'
 
+# Additional Features Added 
+Now through chat we could get image to our pc now if we need to transfer our files from our pc to any device(ie mobiles,tabs,..).
+
+# qr-filetransfer-universal
+📁 Send files from your Computer to your Phone through WiFi with a QR code
+
+## About
+This is a handy little python 3 program that allows you to send files or folders through your Local Area Network (inside your WiFi) by simply scanning a QR Code through your phone! The code is based off sdushantha's amazing work with some added stuff that I found useful plus compatibility with Windows aside from macOS and Linux.
+
+*Note that on Windows, the QR Code won't appear inside the powershell/cmd window but instead through an image viewer.*
+## Installation
+
+Windows:
+
+Just download and run the latest executable from the releases page above. Alternatively you can do it with the Python script:
+
+1. Install Python 3 if you don't have it.
+2. Open powershell and execute:
+    pip install pyqrcode
+3. Download the qr-filetransfer-universal.py file from here
+4. Run it!
 
 
+Linux / macOS:
+```bash
+# clone the repo
+> git clone https://github.com/CedArctic/qr-filetransfer-universal.git
+
+# install the requirements
+> pip3 install -r requirements.txt
+```
 
 
-### Group Members:
-SAI ROHITH ARETI(2019201072)
-YALLAMANDA RAO MUNDRU(2019201029)
-JAYA KRISHNA KURAVA(2019201076)
-SHOVAN SWAIN (20161127)
-ARUN G (201564134)
-AASHISH SHRIVATSAVA (20161111)
+## Usage
+Just double click the .py file and drag and drop inside whatever you want to send! Alternatively you can also use the program this way through the command line:
+
+```
+qr-filetransfer-universal.py [-h] -f FILE
+```
+
+**Note:** Both devices needs to be connected to the same network
+
+**Exiting**
+
+To exit the program, just press ```CTRL+C```. **Dont** press ```CTRL+Z```.
+
+---
+
+Transfer a single file
+```bash
+python3 qr-filetransfer-universal.py -f /path/to/file.txt
+```
+
+
+Transfer a full directory. **Note:** the directory gets zipped before being transferred
+```bash
+python3 qr-filetransfer-universal.py -f /path/to/directory/
+```
