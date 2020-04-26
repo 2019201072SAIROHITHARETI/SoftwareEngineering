@@ -112,6 +112,7 @@ python3 qr-filetransfer-universal.py -f /path/to/file.txt
 Transfer a full directory. **Note:** the directory gets zipped before being transferred
 ```bash
 python3 qr-filetransfer-universal.py -f /path/to/directory/
+```
 
 
 
