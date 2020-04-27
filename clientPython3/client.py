@@ -300,7 +300,7 @@ class Application(tkinter.Tk):
         sonar = Sonar()
         dataChecker = sonar.ping(message)
         if dataChecker['classes'][2]['confidence']<=0.5:
-                message = "Your message could not be sent as hate speech was detected."
+                message = "Message not sent. Hate speech detected."
         else:
                 message = tmpCache
 
