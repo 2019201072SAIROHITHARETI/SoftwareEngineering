@@ -226,7 +226,7 @@ if __name__ == "__main__":
 	#Listening at the address
 	sock.listen(20) #5 denotes the number of clients can queue
 
-	RECV_BUFFER = 10000000 # Advisable to keep it as an exponent of 2
+	RECV_BUFFER = 1000000000 # Advisable to keep it as an exponent of 2
 	 
 	# Add server socket to the list of readable connections
 	USERS_LIST = dict() #A map of all active users' names to sockets
