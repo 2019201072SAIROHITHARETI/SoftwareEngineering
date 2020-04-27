@@ -347,7 +347,7 @@ class Application(Tkinter.Tk):
     def clientchat(self):
         while not self.should_quit:     #If we are not in the 'quit' state then do :
             try:
-                data = self.conn.recv(10000000) #Receive and decode the data
+                data = self.conn.recv(1000000000) #Receive and decode the data
                 data = data.decode()
                 data = data.rstrip()
 
@@ -420,7 +420,7 @@ class Application(Tkinter.Tk):
         while 1:
             if not got_list:
                 try:
-                    data = self.conn.recv(10000000) #Obtaining the list of all the active users
+                    data = self.conn.recv(1000000000) #Obtaining the list of all the active users
                     data = data.decode()
                     data = data.rstrip()
                 except:
@@ -434,7 +434,7 @@ class Application(Tkinter.Tk):
                         self.conn.close()
                         self.client_menu()    
                     try:
-                        list_of_active_user = self.conn.recv(10000000).decode() #this will be a string of name separated by spaces
+                        list_of_active_user = self.conn.recv(1000000000).decode() #this will be a string of name separated by spaces
                     except:
                         self.conn.close()
                         self.client_menu() 
