@@ -94,8 +94,6 @@ Linux / macOS:
 # install the requirements
 > pip3 install -r requirements.txt
 ```
-
-
 ## Usage
 Just double click the .py file and drag and drop inside whatever you want to send! Alternatively you can also use the program this way through the command line:
 
