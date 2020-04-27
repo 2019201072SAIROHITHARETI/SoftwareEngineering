@@ -330,21 +330,24 @@ class Application(tkinter.Tk):
             encoded_bytes = base64.b64encode(file.read())
             encoded_string = str(encoded_bytes, "utf-8")
 
-        fl = cv2.imread(str(filename))
-        
-        gray = cv2.cvtColor(fl, cv2.COLOR_BGR2GRAY)
-        # Load the cascade
-        face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+        strfl = str(filename)
+        s3 = strfl[-3:]
+        s4 = strfl[-4:]
+        if s3 == "jpg" or s3 == "png" or s4 =="jpeg":
+            fl = cv2.imread(str(filename))
+            gray = cv2.cvtColor(fl, cv2.COLOR_BGR2GRAY)
+            # Load the cascade
+            face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-        # Detect faces
-        faces = face_cascade.detectMultiScale(gray, 1.1, 4)
-        if(faces.all()):
-            print("face detected")
-            for (x, y, w, h) in faces:
-                cv2.rectangle(fl, (x, y), (x + w, y + h), (255, 0, 0), 2)
-            # cv2.imwrite('test1.jpg',fl)
-            cv2.imshow("face detected",fl)
-            cv2.waitKey()
+            # Detect faces
+            faces = face_cascade.detectMultiScale(gray, 1.1, 4)
+            if(faces.all()):
+                print("face detected")
+                for (x, y, w, h) in faces:
+                    cv2.rectangle(fl, (x, y), (x + w, y + h), (255, 0, 0), 2)
+                    # cv2.imwrite('test1.jpg',fl)
+                    cv2.imshow("face detected",fl)
+                    cv2.waitKey()
 
         # Display the output
         
