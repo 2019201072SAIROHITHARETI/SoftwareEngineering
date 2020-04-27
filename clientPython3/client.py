@@ -1,7 +1,7 @@
 import socket, select, string, sys
 
 import tkinter                  #The python gui interface for Tk gui extension we 're using
-import tkinter.filedialog
+from tkinter import filedialog as fd
 from tkinter import ttk         #Module providing access to the Tk themed widget set
 import threading                #Threading 
 import base64
@@ -289,7 +289,7 @@ class Application(tkinter.Tk):
         self.clientchat_thread.start()
          
     def browse(self):
-        self.mmfilename = tkFileDialog.askopenfilename()
+        self.mmfilename = fd.askopenfilename()
         self.multimedia_send()
 
     #Sending the message according to the format specified in server.py and updating the chat history area
@@ -300,7 +300,7 @@ class Application(tkinter.Tk):
         sonar = Sonar()
         dataChecker = sonar.ping(message)
         if dataChecker['classes'][2]['confidence']<=0.5:
-                message = "Message not sent. Hate speech detected."
+                message = "Your message could not be sent as hate speech was detected."
         else:
                 message = tmpCache
 
@@ -326,7 +326,8 @@ class Application(tkinter.Tk):
         filename = self.mmfilename
 
         with open(filename, "rb") as file:
-            encoded_string = base64.b64encode(file.read())
+            encoded_bytes = base64.b64encode(file.read())
+            encoded_string = str(encoded_bytes, "utf-8")
 
         data = "^"
         for client in self.list_of_active_user:
