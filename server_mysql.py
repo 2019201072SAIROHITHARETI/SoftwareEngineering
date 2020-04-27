@@ -131,6 +131,23 @@ def clientthread(conn,addr): #Common client function for each socket connection
 		sys.exit()
 
 
+#authenticating from the database
+def authenticate(uname, pwd):
+      is_valid = False
+    
+      data_base = sql.connect(host='localhost',port=3306,user='root',passwd='',database='LOGIN_APP')
+      c = data_base.cursor()
+      c.execute(f'select Password from LOGIN_DETAILS where name = "{uname}" ')
+      b = c.fetchall()
+      for i in b:
+          passw = i[0]
+        
+      if pwd == passw:
+          is_valid=True
+          return is_valid
+      else:
+          return is_valid
+    
 #Adding a new user to the database
 def reg_user(uname,pwd):
     #we will now open /update file to maintain a database
