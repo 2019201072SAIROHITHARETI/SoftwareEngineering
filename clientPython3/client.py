@@ -267,7 +267,7 @@ class Application(tkinter.Tk):
                     wraplength = 125,
                     anchor = tkinter.W,
                     justify = tkinter.LEFT,
-                    text = 'Choose receiver from the following connected clients:')
+                    text = 'Client List:')
 
         self.radio_label.pack()
         self.scroll.pack(side = tkinter.RIGHT,fill=tkinter.Y)
@@ -301,7 +301,7 @@ class Application(tkinter.Tk):
         sonar = Sonar()
         dataChecker = sonar.ping(message)
         if dataChecker['classes'][2]['confidence']<=0.5:
-                message = "Your message could not be sent as hate speech was detected."
+                message = "Hate speech detected. Message not delivered."
         else:
                 message = tmpCache
 
